@@ -1,140 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Black to Green Gradient Site</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zone #47 — The Neon Club</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
   <style>
     body {
-      min-height: 100vh;
       margin: 0;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: linear-gradient(135deg, #101010 0%, #0f0 100%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: #e5ffe5;
-      overflow-x: hidden;
-    }
-    .container {
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(ellipse at center, #0f0f23 0%, #000010 100%);
+      color: #fff;
       text-align: center;
-      background: rgba(20,40,20,0.7);
-      padding: 2.5rem 2rem;
-      border-radius: 1.5rem;
-      box-shadow: 0 0 80px #0f0a;
-      max-width: 400px;
-      margin: 2rem;
+    }
+    header {
+      padding: 3rem 1rem;
     }
     h1 {
-      font-size: 2.5rem;
-      margin: 0 0 1.5rem 0;
-      letter-spacing: 2px;
+      font-size: 3rem;
+      color: #39ff14;
     }
     p {
       font-size: 1.2rem;
-      margin-bottom: 2.5rem;
+      max-width: 700px;
+      margin: 1rem auto;
+      color: #ccc;
     }
-    .animated-btn {
-      position: relative;
+    .button-group {
+      margin: 2rem 0;
+    }
+    .button {
+      background: #111;
+      border: 2px solid #39ff14;
+      color: #39ff14;
+      padding: 0.75rem 1.5rem;
+      margin: 0.5rem;
+      text-decoration: none;
+      font-size: 1rem;
       display: inline-block;
-      padding: 0.7em 2.5em;
-      color: #0f0;
-      background: transparent;
-      border: none;
-      cursor: pointer;
-      font-size: 1.1rem;
-      font-weight: bold;
-      margin: 0.5em;
-      letter-spacing: 2px;
-      z-index: 1;
-      overflow: hidden;
-      transition: color 0.3s;
+      border-radius: 10px;
+      transition: background 0.3s;
     }
-    .animated-btn:before, .animated-btn:after {
-      content: '';
-      position: absolute;
-      border-radius: 1.2em;
-      z-index: -1;
+    .button:hover {
+      background: #39ff14;
+      color: #000;
     }
-    .animated-btn:before {
-      top: 0; left: 0; right: 0; bottom: 0;
-      border: 2px solid #0f0;
-      transition: transform 0.3s;
-      transform: scaleX(1) scaleY(1);
-    }
-    .animated-btn:after {
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: linear-gradient(90deg, #222 20%, #0f0 80%);
-      opacity: 0.12;
-      transition: opacity 0.3s;
-    }
-    .animated-btn:hover, .animated-btn:focus {
-      color: #101010;
-    }
-    .animated-btn:hover:before {
-      transform: scaleX(1.1) scaleY(1.3);
-      box-shadow: 0 0 22px 6px #0f08;
-    }
-    .animated-btn:hover:after {
-      opacity: 0.25;
-    }
-    /* Optional: Animated border lines */
-    .animated-btn span {
-      position: absolute;
-      display: block;
-      background: linear-gradient(90deg, transparent, #0f0, transparent);
-      border-radius: 2px;
-      pointer-events: none;
-    }
-    .animated-btn span.top, .animated-btn span.bottom {
-      left: 0; right: 0; height: 3px;
-      width: 100%;
-      transform: scaleX(0);
-      transition: transform 0.3s;
-    }
-    .animated-btn span.top { top: 0; }
-    .animated-btn span.bottom { bottom: 0; }
-    .animated-btn:hover span.top,
-    .animated-btn:hover span.bottom {
-      transform: scaleX(1);
-    }
-    .animated-btn span.left, .animated-btn span.right {
-      top: 0; bottom: 0; width: 3px;
-      height: 100%;
-      transform: scaleY(0);
-      transition: transform 0.3s;
-    }
-    .animated-btn span.left { left: 0; }
-    .animated-btn span.right { right: 0; }
-    .animated-btn:hover span.left,
-    .animated-btn:hover span.right {
-      transform: scaleY(1);
-    }
-    @media (max-width: 600px) {
-      .container { max-width: 98vw; }
-      h1 { font-size: 2rem; }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Welcome to My Green Gradient Site</h1>
-    <p>Experience an aesthetic one-page website with a stunning black-to-green gradient background and interactive animated buttons. Built from scratch!</p>
-    <button class="animated-btn">
-      Click Me
-      <span class="top"></span>
-      <span class="right"></span>
-      <span class="bottom"></span>
-      <span class="left"></span>
-    </button>
-    <button class="animated-btn">
-      Another Action
-      <span class="top"></span>
-      <span class="right"></span>
-      <span class="bottom"></span>
-      <span class="left"></span>
-    </button>
-  </div>
+  <header>
+    <h1>Zone #47</h1>
+    <p>
+      Welcome to <strong>Zone #47</strong> — the Neon Club Community Hub. We're growing a vibrant space for all kinds of talk: memes, AI, tech, debates, vibes & more.
+    </p>
+    <p>
+      ✨ Custom Discord Tag: <strong>#47</strong> <br />
+      🤖 Custom Discord Bot <br />
+      🚀 Clean, friendly, global community
+    </p>
+    <div class="button-group">
+      <a href="https://discord.gg/kpMa7Ee5RE" class="button">Join Our Discord</a>
+      <a href="https://instagram.com/yourpage" class="button">Instagram</a>
+      <a href="https://youtube.com/yourchannel" class="button">YouTube</a>
+      <a href="https://github.com/yourrepo" class="button">GitHub</a>
+    </div>
+  </header>
+
+  <footer>
+    <p>&copy; 2025 Zone #47 • Powered by neon vibes</p>
+  </footer>
 </body>
 </html>
+
